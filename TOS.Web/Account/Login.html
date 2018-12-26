@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link href="../Content/font-awesome.min.css" rel="stylesheet" />
+	<style type="text/css" rel="stylesheet">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			color: #fff;
+			font-family: 'Microsoft YaHei UI';
+		}
+		ul, li {
+			list-style: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		.box {
+			position: relative;
+			width: 662px;
+			height: 490px;
+			margin: 18px auto;
+			border-radius: 5px;
+			/*border: 1px solid #808080;*/
+			background: url(/images/login_box_bg.jpg) center top;
+		}
+		.header {
+			width: 100%;
+		}
+		.logo {
+			float: left;
+			padding: 0 36px;
+			line-height: 96px;
+			font-size: 24px;
+		}
+		.menu-list {
+			float: right;
+		}
+		.menu-list li {
+			float: left;
+		}
+		.menu-list li.current {
+			border-bottom: 1px solid #fff;
+		}
+		.menu-list li a {
+			display: inline-block;
+			padding: 38px 19px;
+			color: #fff;
+		}
+		.menu-list li a:hover {
+			background-color: rgba(0, 13, 90,.5);
+		}
+		.main {
+			position: absolute;
+			top: 120px;
+			left: 190px;
+		}
+		.input-area {
+		width:258px;
+		padding:22px 20px 0;
+		}
+		.main .input-group {
+			width:238px;
+			height:46px;
+			padding:16px 10px 0;
+			border-bottom:1px solid #fff;
+		}
+		.input-group input {
+			height:44px;
+			width:170px;
+			padding-left:36px;
+			background-color:rgba(0,0,0,0);
+			color:#fff;
+			font-size:18px;
+			border:0;
+			outline:0;
+		}
+		.input-group input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			color: #d6d3ca;
+		}
+
+		.input-group input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			color: #d6d3ca;
+		}
+
+		.input-group input::-moz-placeholder { /* Mozilla Firefox 19+ */
+			color: #d6d3ca;
+		}
+
+		.input-group input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: #d6d3ca;
+		}
+		.input-group span {
+			font-size:20px;
+		}
+		.submit-box {
+			padding-top:46px;
+		}
+			.submit-box input[type=submit] {
+			width:100%;
+			height:42px;
+			border-radius:21px;
+			background-color:rgba(47,55,74,.5);
+			border:0;
+			outline:0;
+			color:#fff;
+			font-size:16px;
+			cursor:pointer;
+			}
+				.submit-box input[type=submit]:hover {
+					background-color: rgba(47,55,74,.7);
+				}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="header">
+			<div class="logo">火车票管理系统</div>
+			<div class="menu-list">
+					<ul>
+					<li class="current"><a href="#">登录</a></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="input-area">
+				<div class="input-group">
+					<label for="txtUserName"><span class="fa fa-vcard-o fa-fw"></span></label>
+					<input type="text" name="userName" placeholder="请输入你的用户名" id="txtUserName" />
+				</div>
+				<div class="input-group">
+					<label for="txtUserPwd"><span class="fa fa-key fa-fw"></span></label>
+					<input type="password" name="userPwd" placeholder="请输入你的密码" id="txtUserPwd" />
+				</div>
+			</div>
+			<div class="submit-box">
+				<input type="submit" value="注册" />
+			</div>
+		</div>
+		<div class="footer"></div>
+	</div>
+</body>
+</html>

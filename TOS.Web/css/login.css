@@ -1,0 +1,171 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	width: 150px;
+	height: 15px;
+	border: 0;
+}
+
+button {
+	margin-left: 55px;
+	width: 80px;
+	height: 20px;
+}
+
+div {
+	/*margin-left: 100px;*/
+	height: 30px;
+	/*padding-top: 10px;*/
+}
+
+span {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+}
+
+.login-form {
+	width: 750px;
+	margin: 10px auto;
+}
+
+body {
+	background: url("../images/bg.jpg")
+}
+
+.top-left {
+	width: 375px;
+	height: 140px;
+	background: url("../images/top_left.jpg");
+	padding-top: 0;
+	font-size: 0;
+	display: inline-block;
+}
+
+.top-right {
+	width: 375px;
+	height: 140px;
+	background: url("../images/top_right.jpg");
+	font-size: 0;
+	padding-top: 0;
+	margin-left: 0;
+	display: inline-block;
+}
+
+.top2-left {
+	width: 375px;
+	height: 60px;
+	background: url("../images/top2_left.jpg");
+	font-size: 0;
+	padding-top: 0;
+	margin-top: -4px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.top2-right {
+	width: 375px;
+	height: 60px;
+	background: url("../images/top2_right.jpg");
+	font-size: 0;
+	padding-top: 0;
+	margin-top: -4px;
+	margin-left: 0;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.center-left {
+	width: 375px;
+	height: 133px;
+	background: url("../images/center_left.jpg");
+	padding-top: 0;
+	font-size: 0;
+	display: inline-block;
+}
+
+.center-c {
+	position: relative;
+	width: 199px;
+	height: 133px;
+	background: url("../images/center_c.jpg");
+	margin-left: 0;
+	padding-top: 0;
+	vertical-align: top;
+	display: inline-block;
+	text-align: right;
+}
+
+	.center-c .center-login {
+		position: absolute;
+		top: 16px;
+	}
+
+	.center-c span {
+		font-size: 12px;
+	}
+
+.tips {
+	margin-left: 0;
+	font-size: 12px;
+}
+
+input[type=text], input[type=password] {
+	height: 18px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+
+input[type=checkbox] {
+	width: 20px;
+}
+
+.auto-login {
+	position: absolute;
+	top: 62px;
+	width: 73px;
+	font-size: 12px;
+	padding-top:2px;
+}
+
+input.login, input.reg {
+	display: inline-block;
+	width: 71px;
+	height: 27px;
+	cursor: pointer;
+}
+
+.login {
+	margin-left: 5px;
+	margin-right: 28px;
+	background: url("../images/login.jpg");
+}
+
+.reg {
+	background: url("../images/reg.jpg");
+}
+
+.center-right {
+	width: 176px;
+	height: 133px;
+	background: url("../images/center_right.jpg");
+	font-size: 0;
+	padding-top: 0;
+	margin-left: 0;
+	display: inline-block;
+}
+
+.bottom {
+	width: 750px;
+	height: 67px;
+	padding-top: 0;
+	margin-top: -5px;
+	background: url("../images/bottom.jpg");
+	text-align: center;
+	line-height: 67px;
+	color: #fff;
+}

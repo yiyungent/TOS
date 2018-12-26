@@ -1,0 +1,212 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="TOS.Web.Master.Main" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <title>系统管理后台</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none
+        }
+
+        .header {
+            position: relative;
+            z-index: 1000;
+            background-image: url(/images/home_top1.jpg);
+            height: 74px;
+        }
+
+        .nav {
+            padding: 0 50px;
+            font-size: 0;
+            box-sizing: border-box;
+        }
+
+        .nav * {
+            font-size: 14px;
+        }
+
+        .nav .nav-item {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 26px;
+            padding-top: 48px;
+        }
+
+        .nav .nav-item a {
+            display: block;
+        }
+
+        .nav-tree {
+            width: 200px;
+            padding: 0;
+        }
+
+        .nav-tree .nav-item {
+            display: block;
+            width: 100%;
+            line-height: 21px;
+            text-align: center;
+            padding: 8px 0 0 15px;
+        }
+
+        .nav-tree .nav-item a {
+            position: relative;
+            height: 21px;
+            width: 170px;
+            background-image: url(/images/m_button.jpg);
+            color: #0d60f2;
+        }
+
+        .logo {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 441px;
+            height: 74px;
+            overflow-y: hidden;
+        }
+
+        .logo img {
+            float: left;
+        }
+
+        .logo img:last-child {
+            margin-top: -1px;
+        }
+
+        .layout-left {
+            position: absolute;
+            left: 441px;
+            top: 0;
+            height: 74px;
+            color: #0d60f2;
+        }
+
+        .layout-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .layout-right .exit {
+            padding-top: 50px;
+            /*line-height: 15px;*/
+            line-height: 1;
+        }
+
+        .layout-right .exit .exit-btn {
+            display: inline-block;
+            width: 67px;
+            height: 22px;
+            background-image: url(/images/loginout.jpg);
+        }
+
+        .side {
+            position: fixed;
+            top: 74px;
+            left: 0;
+            bottom: 48px;
+            z-index: 998;
+            width: 200px;
+            overflow: hidden;
+            border-right: 1px solid #a7cadd;
+            border-bottom: 1px solid #a7cadd;
+        }
+
+        .side .side-title {
+            width: 200px;
+            height: 33px;
+            background: url(/images/m_fl.jpg) center;
+        }
+
+        .side .side-scroll {
+            position: relative;
+            width: 220px;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .body {
+            position: fixed;
+            top: 74px;
+            bottom: 48px;
+            left: 208px;
+            right: 0;
+            z-index: 997;
+            width: auto;
+            overflow: hidden;
+            overflow-y: auto;
+            box-sizing: border-box;
+            border-left: 1px solid #a7cadd;
+            border-bottom: 1px solid #a7cadd;
+        }
+
+        .body > .main {
+            padding: 15px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 998;
+            height: 44px;
+            line-height: 44px;
+            padding: 0 200px;
+            text-align: right;
+            background-color: #a7cadd;
+            color: #0d60f2;
+        }
+    </style>
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <div class="logo">
+                <img src="/images/home_logon.jpg" />
+                <img src="/images/home_top.jpg" />
+            </div>
+            <!-- 头部水平导航区域 -->
+            <ul class="nav layout-left">
+                <asp:ContentPlaceHolder ID="layout_left" runat="server"></asp:ContentPlaceHolder>
+            </ul>
+            <ul class="nav layout-right">
+                <asp:ContentPlaceHolder ID="layout_right" runat="server"></asp:ContentPlaceHolder>
+            </ul>
+        </div>
+        <div class="side">
+            <div class="side-title"></div>
+            <div class="side-scroll">
+                <!-- 左侧垂直导航区域 -->
+                <ul class="nav nav-tree">
+                    <asp:ContentPlaceHolder ID="nav_tree" runat="server"></asp:ContentPlaceHolder>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <!-- 内容主体区域 -->
+            <div class="main">
+                <asp:ContentPlaceHolder ID="content" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- 底部固定区域 -->
+            The MIT License (MIT)
+        </div>
+    </form>
+</body>
+</html>

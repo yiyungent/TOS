@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FormInfo.master.cs" Inherits="TOS.Web.Master.FormInfo" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../css/base.css" rel="stylesheet" />
+    <style>
+        .w {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .header-banner {
+            height: 40px;
+            background-color: #a7cadd;
+            color: #fff;
+            line-height: 40px;
+        }
+
+
+        .panel {
+            padding: 8px 0;
+        }
+
+        .star {
+            color: #ff0000;
+        }
+
+        .error {
+            color: #ff0000;
+            font-size: 20px;
+        }
+
+        table td {
+            height: 30px;
+        }
+
+        table tr td:first-child {
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        table tr td:last-child {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .panel td.btn-control {
+            padding-left: 600px;
+        }
+
+        .error {
+            color: #ff0000;
+            font-size: 20px;
+        }
+    </style>
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="content" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
